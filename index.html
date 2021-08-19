@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Livia Canuto</title>
+</head>
+    <body>
+        <header>
+            <div class="menu">
+                <a href="">GitHub</a>
+                <a href="">LinkedIn</a>
+                <a href="">Whatsapp</a>
+            </div>
+        </header>
+        
+        <section>
+            <h1>Livia Canuto</h1>
+            <h5>FullStack Developer</h5>
+            
+            <div onclick="displayAbout()"  id="arrow">
+                <i id="animation" class="fas fa-chevron-down"></i>
+            </div>
+            <div id="about" style="display:none;">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                Temporibus reiciendis quis ipsa tempora atque animi 
+                voluptatibus quaerat provident quod sapiente vitae fugit 
+                possimus, aut, facilis in doloribus, architecto at quo.
+            </div>
+            <div class="form">
+                <input type="text" placeholder="digite seu e-mail!">
+                <button type="submit">Enviar</button>
+            </div>
+        </section>
+        <script>
+            function displayAbout() {
+                var arrow = document.getElementById('animation');
+                arrow.classList.toggle('rotate');
+
+                var display = document.getElementById('about');
+                display.classList.toggle('active');
+            }
+        </script>
+    </body>
+</html>
